@@ -1,0 +1,4 @@
+event-pisa.jpg: "Piazza dei Miracoli (Pisa) 2023.jpg" by PaestumPaestum, CC BY 4.0, via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Piazza_dei_Miracoli_(Pisa)_2023.jpg
+event-stuttgart.jpg: "Schlossplatzspringbrunnen Schlossplatz Stuttgart 2015 01.jpg" by Julian Herzog (Website), CC BY 4.0, via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Schlossplatzspringbrunnen_Schlossplatz_Stuttgart_2015_01.jpg
+event-rajkot.jpg: "Marwadi University.jpg" by Eddie Stann, CC BY-SA 4.0, via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Marwadi_University.jpg
+hero-globe.jpg: rendered for this site (tools/render-globe.py) from NASA Blue Marble (via Wikimedia Commons, public domain) and NASA Black Marble 2016 city lights (NASA Earth Observatory, public domain).

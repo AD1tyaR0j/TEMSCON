@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IEEE TEMS | Technology and Engineering Management Society</title>
+  <meta name="description" content="IEEE TEMS has connected engineers, researchers and managers since 1951 through conferences, journals and lifelong learning in technology and engineering management." />
+  <meta name="theme-color" content="#1570ef" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&family=Source+Sans+3:wght@400;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/hero-globe.jpg" />
+  <link rel="stylesheet" href="styles.css?v=25" />
+</head>
+<body class="is-loading">
+
+<svg class="sprite" aria-hidden="true" width="0" height="0">
+  <defs>
+    <linearGradient id="ringFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11589a" />
+      <stop offset=".26" stop-color="#1f9ddc" />
+      <stop offset=".44" stop-color="#9fd3b0" />
+      <stop offset=".52" stop-color="#f6c536" />
+      <stop offset=".62" stop-color="#9fd3b0" />
+      <stop offset=".78" stop-color="#1f9ddc" />
+      <stop offset="1" stop-color="#11589a" />
+    </linearGradient>
+    <linearGradient id="ringBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a3c72" />
+      <stop offset=".5" stop-color="#1878bd" />
+      <stop offset="1" stop-color="#0a3c72" />
+    </linearGradient>
+    <linearGradient id="arcGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffd36b" stop-opacity="0" />
+      <stop offset=".5" stop-color="#ffcf5a" />
+      <stop offset="1" stop-color="#ffd36b" stop-opacity="0" />
+    </linearGradient>
+    <filter id="goldGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.4" result="b" />
+      <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <symbol id="tems-rings" viewBox="0 0 108 160">
+    <g transform="rotate(8 50 80)">
+      <path fill="url(#ringBack)" d="M14 54A4.5 26 0 0 1 14 106A3.1 26 0 0 0 14 54Z" />
+      <path fill="url(#ringBack)" d="M31 33A8 47 0 0 1 31 127A5.5 47 0 0 0 31 33Z" />
+      <path fill="url(#ringBack)" d="M53 17A11 63 0 0 1 53 143A7.6 63 0 0 0 53 17Z" />
+      <path fill="url(#ringBack)" d="M80 8A14 72 0 0 1 80 152A9.6 72 0 0 0 80 8Z" />
+      <path fill="url(#ringFront)" d="M14 54A4.5 26 0 0 0 14 106A1.4 26 0 0 1 14 54Z" />
+      <path fill="url(#ringFront)" d="M31 33A8 47 0 0 0 31 127A2.4 47 0 0 1 31 33Z" />
+      <path fill="url(#ringFront)" d="M53 17A11 63 0 0 0 53 143A3.3 63 0 0 1 53 17Z" />
+      <path fill="url(#ringFront)" d="M80 8A14 72 0 0 0 80 152A4.2 72 0 0 1 80 8Z" />
+    </g>
+  </symbol>
+
+  <symbol id="i-lectern" viewBox="0 0 24 24"><rect x="10.7" y="1.8" width="2.6" height="5.4" rx="1.3" style="fill:var(--ia)"/><rect x="11.5" y="7" width="1" height="2.6"/><path d="M4.6 9.4h14.8l-1.3 3.2H5.9z"/><path d="M8 12.6h8l-.9 7.9H8.9z" style="fill:var(--ia)"/><rect x="6.2" y="20.4" width="11.6" height="1.8" rx=".9"/></symbol>
+  <symbol id="i-cap2" viewBox="0 0 24 24"><path d="M12 3 1.5 8 12 13l8.4-4v6.2H22V8z"/><path d="M5.8 11.4v4.5c0 2 2.8 3.6 6.2 3.6s6.2-1.6 6.2-3.6v-4.5L12 14.4z" style="fill:var(--ia)"/><circle cx="21.2" cy="16.4" r="1.3" style="fill:var(--ia)"/></symbol>
+  <symbol id="i-journal" viewBox="0 0 24 24"><rect x="8.2" y="2" width="12.3" height="16.2" rx="1.8" style="fill:var(--ia)"/><rect x="3.5" y="5.6" width="12.3" height="16.4" rx="1.8"/><rect x="6" y="9.2" width="7.3" height="1.5" rx=".75" style="fill:var(--ia)"/><rect x="6" y="12.6" width="7.3" height="1.5" rx=".75" style="fill:var(--ia)"/><rect x="6" y="16" width="4.6" height="1.5" rx=".75" style="fill:var(--ia)"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><path d="M8.3 2.2h1.6v3.3H8.3zm2.9 0h1.6v3.3h-1.6zm2.9 0h1.6v3.3h-1.6zM8.3 18.5h1.6v3.3H8.3zm2.9 0h1.6v3.3h-1.6zm2.9 0h1.6v3.3h-1.6zM2.2 8.3h3.3v1.6H2.2zm0 2.9h3.3v1.6H2.2zm0 2.9h3.3v1.6H2.2zm16.3-5.8h3.3v1.6h-3.3zm0 2.9h3.3v1.6h-3.3zm0 2.9h3.3v1.6h-3.3z"/><rect x="5.6" y="5.6" width="12.8" height="12.8" rx="2.4"/><rect x="9.2" y="9.2" width="5.6" height="5.6" rx="1.2" style="fill:var(--ia)"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><path d="M8.6 1.8h6.8l-1.7 5.4h-3.4z" style="fill:var(--ia)"/><rect x="4.3" y="6.4" width="15.4" height="15.8" rx="2.4"/><circle cx="12" cy="12.4" r="2.5" style="fill:var(--ia)"/><path d="M7.6 19.6c.6-2.5 2.4-3.9 4.4-3.9s3.8 1.4 4.4 3.9z" style="fill:var(--ia)"/></symbol>
+  <symbol id="i-nodes" viewBox="0 0 24 24"><path d="M12 13.4 12 5.6M12 13.4 5.4 17.8M12 13.4l6.6 4.4M5.4 17.8 12 5.6l6.6 12.2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="5.6" r="3"/><circle cx="5.4" cy="17.8" r="3"/><circle cx="18.6" cy="17.8" r="3"/><circle cx="12" cy="13.4" r="2.3" style="fill:var(--ia)"/></symbol>
+  <symbol id="i-medal" viewBox="0 0 24 24"><path d="M6.8 1.8h3.9l2 6.6H8.8zm10.4 0h-3.9l-2 6.6h3.9z" style="fill:var(--ia)"/><circle cx="12" cy="15.1" r="6.9"/><path d="m12 11 1.25 2.55 2.8.4-2.03 1.98.48 2.8L12 17.4l-2.5 1.33.48-2.8-2.03-1.98 2.8-.4z" style="fill:var(--ia)"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6.7" style="fill:var(--ia)"/><circle cx="12" cy="12" r="3.4"/><path d="m12 12 7.6-7.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M17.4 2.6h4v4z" style="fill:var(--ia)"/></symbol>
+  <symbol id="i-trophy2" viewBox="0 0 24 24"><path d="M6.8 4.6H3.6a3.6 3.6 0 0 0 3.9 4.9zm10.4 0h3.2a3.6 3.6 0 0 1-3.9 4.9z" style="fill:var(--ia)"/><path d="M6.6 2.5h10.8v6.4a5.4 5.4 0 0 1-10.8 0z"/><rect x="10.9" y="14" width="2.2" height="3.6"/><rect x="7.2" y="17.6" width="9.6" height="4" rx="1.2" style="fill:var(--ia)"/></symbol>
+  <symbol id="i-grant" viewBox="0 0 24 24"><ellipse cx="12" cy="19.2" rx="7.4" ry="2.8"/><ellipse cx="12" cy="15.7" rx="7.4" ry="2.8" style="fill:var(--ia)"/><rect x="11.3" y="6.6" width="1.4" height="7.4"/><path d="M12 8.2C12 5.4 9.9 3.7 7.1 3.8c.1 2.7 2.1 4.5 4.9 4.4zm0 1.7c0-2.7 2-4.4 4.8-4.3-.1 2.7-2.1 4.4-4.8 4.3z" style="fill:var(--ia)"/></symbol>
+  <symbol id="i-broadcast" viewBox="0 0 24 24"><rect x="9" y="2.4" width="6" height="11.2" rx="3"/><path d="M5.8 10.6a6.2 6.2 0 0 0 12.4 0M12 16.9v3.4M8.4 21.4h7.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3.2 6.4a10.6 10.6 0 0 0 0 8.4M20.8 6.4a10.6 10.6 0 0 1 0 8.4" fill="none" style="stroke:var(--ia)" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></g></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="currentColor"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></g></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h2M14 14h2M8 17h2"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></g></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5M22 9v6"/></g></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11M9 8h6"/></g></symbol>
+  <symbol id="i-cog" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 0 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 0 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 0 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></g></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 14v3M8 21h8M9 17h6v4H9z"/></g></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></g></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77zm-1.08 16.2h1.7L7.4 4.73H5.58z"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M23 12s0-3.6-.46-5.33a2.78 2.78 0 0 0-1.96-1.96C18.86 4.25 12 4.25 12 4.25s-6.86 0-8.58.46a2.78 2.78 0 0 0-1.96 1.96C1 8.4 1 12 1 12s0 3.6.46 5.33a2.78 2.78 0 0 0 1.96 1.96c1.72.46 8.58.46 8.58.46s6.86 0 8.58-.46a2.78 2.78 0 0 0 1.96-1.96C23 15.6 23 12 23 12zM9.75 15.27V8.73L15.5 12z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
+</svg>
+
+<!-- ============ INTRO ============ -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-bg"></div>
+  <div class="logo logo--intro" id="introLogo">
+    <div class="logo-rings-wrap">
+      <div class="intro-glow"></div>
+      <svg class="logo-rings" id="introRings" viewBox="0 0 108 160" overflow="visible"></svg>
+    </div>
+    <div class="logo-text">
+      <div class="logo-title"><span class="ieee">IEEE</span><span class="tems">TEMS</span></div>
+      <div class="logo-sub"><span>Technology &amp; Engineering</span><span>Management Society</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ANIMATED BACKGROUND ============ -->
+<div class="bg" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <canvas class="bg-canvas" id="bgCanvas"></canvas>
+</div>
+
+<div class="progress" id="progress"></div>
+
+<!-- ============ IEEE META BAR ============ -->
+<div class="ieee-bar">
+  <div class="container ieee-bar-inner">
+    <a href="#" data-placeholder>IEEE.org</a>
+    <a href="#" data-placeholder>IEEE <em>Xplore</em> Digital Library</a>
+    <a href="#" data-placeholder>IEEE Standards</a>
+    <a href="#" data-placeholder>IEEE Spectrum</a>
+    <a href="#" data-placeholder>More Sites</a>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="logo logo--header" id="siteLogo" aria-label="IEEE TEMS home">
+      <svg class="logo-rings" viewBox="0 0 108 160"><use href="#tems-rings" /></svg>
+      <span class="logo-text">
+        <span class="logo-title"><span class="ieee">IEEE</span><span class="tems">TEMS</span></span>
+        <span class="logo-sub"><span>Technology &amp; Engineering</span><span>Management Society</span></span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Primary"><ul><li class="has-menu"><a href="#explore">About <svg><use href="#i-chev"/></svg></a><div class="menu"><a href="#history">Mission</a><a href="#history">Board of Governors</a><a href="#history">Committees</a><a href="#history">Distinguished Lecturers</a><a href="#history">Contact us</a></div></li><li class="has-menu"><a href="#events">Conferences <svg><use href="#i-chev"/></svg></a><div class="menu"><a href="#events">Upcoming events</a><a href="#events">Past events</a><a href="#publications">Calls for papers</a></div></li><li class="has-menu"><a href="#explore">Technical Activities <svg><use href="#i-chev"/></svg></a><div class="menu"><a href="#explore">Technical Activity Committees</a><a href="#explore">AI for Technology Management</a><a href="#explore">Smart Cities</a><a href="#explore">Blockchain and DLT</a><a href="#explore">Carbon Neutrality</a><a href="#explore">IoT and AI Initiative</a></div></li><li class="has-menu"><a href="#impact">Education <svg><use href="#i-chev"/></svg></a><div class="menu"><a href="#impact">Education Committee</a><a href="#impact">TEMSBOK</a><a href="#impact">IEEE Blended Learning Program</a><a href="#impact">TEMS TV and Radio</a><a href="#impact">Global Student Competition</a><a href="#impact">Interactive courses</a></div></li><li class="has-menu"><a href="#publications">Publications <svg><use href="#i-chev"/></svg></a><div class="menu"><a href="#publications">Leadership BRIEFS</a><a href="#publications">Transactions on Engineering Management</a><a href="#publications">Engineering Management Review</a><a href="#publications">Topical article collections</a><a href="#publications">Calls for papers</a></div></li><li class="has-menu"><a href="#join">Membership <svg><use href="#i-chev"/></svg></a><div class="menu"><a href="#join">Join or renew</a><a href="#impact">Student Branch Chapter grants</a><a href="#join">Women in TEMS</a></div></li><li class="has-menu"><a href="#news">Community <svg><use href="#i-chev"/></svg></a><div class="menu"><a href="#news">IEEE TEMS on LinkedIn</a><a href="#explore">IoT and AI Challenge</a><a href="#explore">Industry Forum</a></div></li></ul></nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search this page"><svg><use href="#i-search"/></svg></button>
+      <a href="#join" class="btn btn--primary btn--sm magnetic">Join TEMS <svg><use href="#i-arrow"/></svg></a>
+      <a href="#" data-placeholder class="header-ieee" aria-label="IEEE"><img src="assets/ieee-mb-blue.png" alt="IEEE" width="287" height="84" /></a>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="search-overlay" id="searchOverlay">
+  <form class="search-box" id="searchForm" role="search">
+    <svg><use href="#i-search"/></svg>
+    <input type="search" name="s" placeholder="Search this page: conferences, journals, programs" aria-label="Search this page" required />
+    <button class="btn btn--primary btn--sm" type="submit">Search</button>
+    <button class="icon-btn" id="searchClose" type="button" aria-label="Close search"><svg><use href="#i-close"/></svg></button>
+    <p class="search-msg" id="searchMsg" aria-live="polite"></p>
+  </form>
+</div>
+
+<main id="top">
+  <!-- ============ HERO ============ -->
+  <section class="hero container">
+    <div class="hero-grid">
+      <div class="hero-copy" id="heroCopy">
+        <p class="eyebrow hero-eyebrow"><span>People</span><i aria-hidden="true">×</i><span>Ideas</span><i aria-hidden="true">×</i><span>Technology</span><i aria-hidden="true">×</i><span>Impact</span></p>
+        <h1 class="hero-title" id="heroTitle">From engineer to <em>leader,</em> since 1951.</h1>
+        <p class="hero-lead">IEEE TEMS connects engineers, researchers and managers across academia, industry and government through conferences, journals and lifelong learning.</p>
+        <div class="hero-cta">
+          <a href="#join" class="btn btn--primary magnetic">Become a Member <svg><use href="#i-arrow"/></svg></a>
+          <a href="#explore" class="btn btn--ghost magnetic">Explore TEMS <span class="btn-dot"><svg><use href="#i-play"/></svg></span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="heroVisual">
+        <div class="panels" id="panels">
+          <figure class="panel">
+            <div class="panel-shape"><div class="media globe"><div class="globe-frame"><img src="assets/hero-globe.jpg" alt="Earth at night with glowing connections between cities" decoding="async" /><svg class="net" viewBox="0 0 2400 1250" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g class="net-arcs" fill="none" stroke="#fff4cf" stroke-width="3.2" stroke-linecap="round"><path d="M539 585L623 532L710 483L799 438L892 398L986 363L1082 333L1181 309L1281 291L1382 279L1484 273L1586 274L1689 280L1791 294L1893 313L1994 339L2094 370L2192 408L2288 451L2382 500L2443 535"/><path d="M323 742L369 699L418 659L468 620L520 584L574 551L630 520L688 493L747 469L807 449L870 433L933 421L998 413L1064 409L1130 409L1198 414L1265 422L1334 436L1402 453L1470 474L1538 500L1606 529L1673 561L1739 598L1805 637L1869 679L1933 724L1995 772L2056 821L2116 873L2174 926L2174 926"/><path d="M-48 958L-22 927L5 896L32 866L61 837L90 809L120 781L151 755L183 730L216 707L250 685L285 664L321 645L358 628L395 613L434 600L473 588L513 579L553 571L594 565L636 561L678 559L720 558L762 559L805 562L847 566L890 571L932 577L975 585L1017 593L1059 602L1059 602"/><path d="M700 598L721 581L742 564L764 547L785 531L807 516L830 501L852 487L875 474L899 462L923 451L947 441L971 432L996 425L1021 419L1046 414L1071 410L1097 408L1123 407L1148 407L1174 408L1200 411L1227 414L1253 419L1279 424L1305 431L1331 438L1356 446L1382 455L1407 463L1433 473L1433 473"/><path d="M479 718L493 705L508 692L522 680L538 668L554 658L570 648L587 639L604 631L621 625L640 620L659 616L678 613L698 612L718 613L739 614L760 618L781 623L803 629L826 637L848 646L871 656L894 668L917 681L941 694L964 709L988 725L1011 741L1035 758L1058 776L1081 794L1081 794"/><path d="M1031 428L1039 425L1047 422L1055 421L1063 421L1072 422L1081 424L1089 427L1098 431L1107 436L1117 442L1126 449L1135 456L1144 465L1154 473L1163 483L1173 492L1182 502L1185 505"/><path d="M1059 602L1087 589L1115 576L1143 564L1171 552L1200 541L1229 531L1259 522L1288 514L1318 507L1349 502L1379 497L1410 495L1441 493L1471 493L1502 495L1533 498L1564 503L1595 509L1626 516L1657 525L1687 535L1718 547L1748 559L1778 573L1807 588L1837 603L1866 619L1895 636L1923 654L1951 671L1951 671"/><path d="M1081 794L1103 785L1124 777L1146 769L1168 762L1191 756L1213 750L1236 745L1259 740L1282 737L1306 735L1329 733L1353 733L1377 734L1401 736L1425 739L1449 744L1473 749L1497 756L1522 764L1546 773L1570 782L1594 793L1618 805L1641 817L1665 831L1688 845L1711 859L1734 874L1757 889L1780 904L1780 904"/><path d="M2174 926L2205 925L2236 924L2268 924L2299 924L2330 925L2361 927L2393 930L2424 934L2444 937"/><path d="M1433 473L1471 458L1510 444L1549 430L1589 418L1629 407L1669 398L1709 390L1750 383L1790 379L1831 376L1872 375L1913 376L1953 379L1994 384L2034 391L2074 400L2113 411L2152 424L2191 439L2229 456L2266 475L2303 495L2339 517L2374 541L2409 565L2443 591L2443 591"/><path d="M1951 671L1978 669L2006 667L2033 666L2061 666L2088 666L2116 667L2143 669L2171 672L2198 677L2226 682L2253 689L2279 697L2306 706L2332 717L2358 729L2383 742L2408 756L2433 772L2449 783"/><path d="M257 738L214 737L172 739L131 744L92 752L53 762L16 776L-20 794L-43 807"/><path d="M830 680L870 663L911 646L953 631L995 617L1038 604L1081 593L1126 584L1171 576L1216 571L1262 567L1309 566L1355 566L1402 569L1450 575L1497 582L1545 592L1592 604L1640 618L1687 635L1734 653L1780 674L1826 696L1872 720L1917 746L1961 773L2005 802L2048 832L2091 862L2133 894L2174 926L2174 926"/><path d="M323 742L331 729L340 715L349 702L358 690L368 677L378 665L388 654L398 643L409 633L420 623L431 614L443 606L455 599L467 593L480 588L493 583L507 580L520 577L534 575L549 574L563 574L578 574L593 576L608 577L623 580L639 583L654 586L670 590L685 594L700 598L700 598"/><path d="M1185 505L1180 498L1174 492L1169 485L1163 479L1158 474L1152 469L1147 464L1142 461L1136 458L1131 456L1126 455L1122 455L1117 456L1112 458L1108 460L1104 464L1100 469L1096 475L1092 482L1088 489L1085 498L1081 507L1078 517L1075 528L1072 540L1070 551L1067 564L1064 576L1062 589L1059 602L1059 602"/><path d="M1780 904L1765 915L1749 926L1734 939L1718 952L1702 968L1686 984L1670 1002L1653 1022L1637 1043L1620 1067L1603 1092L1586 1118L1569 1147L1551 1177L1534 1209L1517 1242L1500 1277L1494 1289"/><path d="M479 718L504 692L531 666L557 641L584 617L612 594L640 571L669 550L699 529L729 510L759 493L791 477L822 462L854 450L887 438L920 429L954 421L987 415L1021 411L1056 409L1090 408L1125 409L1159 411L1194 415L1229 420L1263 426L1297 434L1332 442L1366 452L1399 462L1433 473L1433 473"/><path d="M700 598L736 572L772 546L808 522L846 499L884 478L923 458L963 440L1004 425L1045 411L1087 400L1130 391L1173 384L1216 380L1260 379L1304 380L1349 384L1393 391L1438 400L1483 411L1527 425L1571 442L1615 460L1659 481L1702 504L1745 528L1788 554L1829 582L1871 610L1911 640L1951 671L1951 671"/></g><g class="net-dots" fill="#fff1c4"><circle cx="479" cy="718" r="5"/><circle cx="830" cy="680" r="5"/><circle cx="1059" cy="602" r="5"/><circle cx="1081" cy="794" r="5"/><circle cx="1185" cy="505" r="5"/><circle cx="1433" cy="473" r="5"/><circle cx="1780" cy="904" r="5"/><circle cx="1951" cy="671" r="5"/><circle cx="2174" cy="926" r="5"/></g></svg></div></div></div>
+            <figcaption><span>Innovation</span><span>Today</span></figcaption>
+          </figure>
+          <figure class="panel">
+            <div class="panel-shape"><div class="media globe"><div class="globe-frame"><img src="assets/hero-globe.jpg" alt="" decoding="async" /><svg class="net" viewBox="0 0 2400 1250" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g class="net-arcs" fill="none" stroke="#fff4cf" stroke-width="3.2" stroke-linecap="round"><path d="M539 585L623 532L710 483L799 438L892 398L986 363L1082 333L1181 309L1281 291L1382 279L1484 273L1586 274L1689 280L1791 294L1893 313L1994 339L2094 370L2192 408L2288 451L2382 500L2443 535"/><path d="M323 742L369 699L418 659L468 620L520 584L574 551L630 520L688 493L747 469L807 449L870 433L933 421L998 413L1064 409L1130 409L1198 414L1265 422L1334 436L1402 453L1470 474L1538 500L1606 529L1673 561L1739 598L1805 637L1869 679L1933 724L1995 772L2056 821L2116 873L2174 926L2174 926"/><path d="M-48 958L-22 927L5 896L32 866L61 837L90 809L120 781L151 755L183 730L216 707L250 685L285 664L321 645L358 628L395 613L434 600L473 588L513 579L553 571L594 565L636 561L678 559L720 558L762 559L805 562L847 566L890 571L932 577L975 585L1017 593L1059 602L1059 602"/><path d="M700 598L721 581L742 564L764 547L785 531L807 516L830 501L852 487L875 474L899 462L923 451L947 441L971 432L996 425L1021 419L1046 414L1071 410L1097 408L1123 407L1148 407L1174 408L1200 411L1227 414L1253 419L1279 424L1305 431L1331 438L1356 446L1382 455L1407 463L1433 473L1433 473"/><path d="M479 718L493 705L508 692L522 680L538 668L554 658L570 648L587 639L604 631L621 625L640 620L659 616L678 613L698 612L718 613L739 614L760 618L781 623L803 629L826 637L848 646L871 656L894 668L917 681L941 694L964 709L988 725L1011 741L1035 758L1058 776L1081 794L1081 794"/><path d="M1031 428L1039 425L1047 422L1055 421L1063 421L1072 422L1081 424L1089 427L1098 431L1107 436L1117 442L1126 449L1135 456L1144 465L1154 473L1163 483L1173 492L1182 502L1185 505"/><path d="M1059 602L1087 589L1115 576L1143 564L1171 552L1200 541L1229 531L1259 522L1288 514L1318 507L1349 502L1379 497L1410 495L1441 493L1471 493L1502 495L1533 498L1564 503L1595 509L1626 516L1657 525L1687 535L1718 547L1748 559L1778 573L1807 588L1837 603L1866 619L1895 636L1923 654L1951 671L1951 671"/><path d="M1081 794L1103 785L1124 777L1146 769L1168 762L1191 756L1213 750L1236 745L1259 740L1282 737L1306 735L1329 733L1353 733L1377 734L1401 736L1425 739L1449 744L1473 749L1497 756L1522 764L1546 773L1570 782L1594 793L1618 805L1641 817L1665 831L1688 845L1711 859L1734 874L1757 889L1780 904L1780 904"/><path d="M2174 926L2205 925L2236 924L2268 924L2299 924L2330 925L2361 927L2393 930L2424 934L2444 937"/><path d="M1433 473L1471 458L1510 444L1549 430L1589 418L1629 407L1669 398L1709 390L1750 383L1790 379L1831 376L1872 375L1913 376L1953 379L1994 384L2034 391L2074 400L2113 411L2152 424L2191 439L2229 456L2266 475L2303 495L2339 517L2374 541L2409 565L2443 591L2443 591"/><path d="M1951 671L1978 669L2006 667L2033 666L2061 666L2088 666L2116 667L2143 669L2171 672L2198 677L2226 682L2253 689L2279 697L2306 706L2332 717L2358 729L2383 742L2408 756L2433 772L2449 783"/><path d="M257 738L214 737L172 739L131 744L92 752L53 762L16 776L-20 794L-43 807"/><path d="M830 680L870 663L911 646L953 631L995 617L1038 604L1081 593L1126 584L1171 576L1216 571L1262 567L1309 566L1355 566L1402 569L1450 575L1497 582L1545 592L1592 604L1640 618L1687 635L1734 653L1780 674L1826 696L1872 720L1917 746L1961 773L2005 802L2048 832L2091 862L2133 894L2174 926L2174 926"/><path d="M323 742L331 729L340 715L349 702L358 690L368 677L378 665L388 654L398 643L409 633L420 623L431 614L443 606L455 599L467 593L480 588L493 583L507 580L520 577L534 575L549 574L563 574L578 574L593 576L608 577L623 580L639 583L654 586L670 590L685 594L700 598L700 598"/><path d="M1185 505L1180 498L1174 492L1169 485L1163 479L1158 474L1152 469L1147 464L1142 461L1136 458L1131 456L1126 455L1122 455L1117 456L1112 458L1108 460L1104 464L1100 469L1096 475L1092 482L1088 489L1085 498L1081 507L1078 517L1075 528L1072 540L1070 551L1067 564L1064 576L1062 589L1059 602L1059 602"/><path d="M1780 904L1765 915L1749 926L1734 939L1718 952L1702 968L1686 984L1670 1002L1653 1022L1637 1043L1620 1067L1603 1092L1586 1118L1569 1147L1551 1177L1534 1209L1517 1242L1500 1277L1494 1289"/><path d="M479 718L504 692L531 666L557 641L584 617L612 594L640 571L669 550L699 529L729 510L759 493L791 477L822 462L854 450L887 438L920 429L954 421L987 415L1021 411L1056 409L1090 408L1125 409L1159 411L1194 415L1229 420L1263 426L1297 434L1332 442L1366 452L1399 462L1433 473L1433 473"/><path d="M700 598L736 572L772 546L808 522L846 499L884 478L923 458L963 440L1004 425L1045 411L1087 400L1130 391L1173 384L1216 380L1260 379L1304 380L1349 384L1393 391L1438 400L1483 411L1527 425L1571 442L1615 460L1659 481L1702 504L1745 528L1788 554L1829 582L1871 610L1911 640L1951 671L1951 671"/></g><g class="net-dots" fill="#fff1c4"><circle cx="479" cy="718" r="5"/><circle cx="830" cy="680" r="5"/><circle cx="1059" cy="602" r="5"/><circle cx="1081" cy="794" r="5"/><circle cx="1185" cy="505" r="5"/><circle cx="1433" cy="473" r="5"/><circle cx="1780" cy="904" r="5"/><circle cx="1951" cy="671" r="5"/><circle cx="2174" cy="926" r="5"/></g></svg></div></div></div>
+            <figcaption><span>Sustainable</span><span>Tomorrow</span></figcaption>
+          </figure>
+          <figure class="panel">
+            <div class="panel-shape"><div class="media globe"><div class="globe-frame"><img src="assets/hero-globe.jpg" alt="" decoding="async" /><svg class="net" viewBox="0 0 2400 1250" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g class="net-arcs" fill="none" stroke="#fff4cf" stroke-width="3.2" stroke-linecap="round"><path d="M539 585L623 532L710 483L799 438L892 398L986 363L1082 333L1181 309L1281 291L1382 279L1484 273L1586 274L1689 280L1791 294L1893 313L1994 339L2094 370L2192 408L2288 451L2382 500L2443 535"/><path d="M323 742L369 699L418 659L468 620L520 584L574 551L630 520L688 493L747 469L807 449L870 433L933 421L998 413L1064 409L1130 409L1198 414L1265 422L1334 436L1402 453L1470 474L1538 500L1606 529L1673 561L1739 598L1805 637L1869 679L1933 724L1995 772L2056 821L2116 873L2174 926L2174 926"/><path d="M-48 958L-22 927L5 896L32 866L61 837L90 809L120 781L151 755L183 730L216 707L250 685L285 664L321 645L358 628L395 613L434 600L473 588L513 579L553 571L594 565L636 561L678 559L720 558L762 559L805 562L847 566L890 571L932 577L975 585L1017 593L1059 602L1059 602"/><path d="M700 598L721 581L742 564L764 547L785 531L807 516L830 501L852 487L875 474L899 462L923 451L947 441L971 432L996 425L1021 419L1046 414L1071 410L1097 408L1123 407L1148 407L1174 408L1200 411L1227 414L1253 419L1279 424L1305 431L1331 438L1356 446L1382 455L1407 463L1433 473L1433 473"/><path d="M479 718L493 705L508 692L522 680L538 668L554 658L570 648L587 639L604 631L621 625L640 620L659 616L678 613L698 612L718 613L739 614L760 618L781 623L803 629L826 637L848 646L871 656L894 668L917 681L941 694L964 709L988 725L1011 741L1035 758L1058 776L1081 794L1081 794"/><path d="M1031 428L1039 425L1047 422L1055 421L1063 421L1072 422L1081 424L1089 427L1098 431L1107 436L1117 442L1126 449L1135 456L1144 465L1154 473L1163 483L1173 492L1182 502L1185 505"/><path d="M1059 602L1087 589L1115 576L1143 564L1171 552L1200 541L1229 531L1259 522L1288 514L1318 507L1349 502L1379 497L1410 495L1441 493L1471 493L1502 495L1533 498L1564 503L1595 509L1626 516L1657 525L1687 535L1718 547L1748 559L1778 573L1807 588L1837 603L1866 619L1895 636L1923 654L1951 671L1951 671"/><path d="M1081 794L1103 785L1124 777L1146 769L1168 762L1191 756L1213 750L1236 745L1259 740L1282 737L1306 735L1329 733L1353 733L1377 734L1401 736L1425 739L1449 744L1473 749L1497 756L1522 764L1546 773L1570 782L1594 793L1618 805L1641 817L1665 831L1688 845L1711 859L1734 874L1757 889L1780 904L1780 904"/><path d="M2174 926L2205 925L2236 924L2268 924L2299 924L2330 925L2361 927L2393 930L2424 934L2444 937"/><path d="M1433 473L1471 458L1510 444L1549 430L1589 418L1629 407L1669 398L1709 390L1750 383L1790 379L1831 376L1872 375L1913 376L1953 379L1994 384L2034 391L2074 400L2113 411L2152 424L2191 439L2229 456L2266 475L2303 495L2339 517L2374 541L2409 565L2443 591L2443 591"/><path d="M1951 671L1978 669L2006 667L2033 666L2061 666L2088 666L2116 667L2143 669L2171 672L2198 677L2226 682L2253 689L2279 697L2306 706L2332 717L2358 729L2383 742L2408 756L2433 772L2449 783"/><path d="M257 738L214 737L172 739L131 744L92 752L53 762L16 776L-20 794L-43 807"/><path d="M830 680L870 663L911 646L953 631L995 617L1038 604L1081 593L1126 584L1171 576L1216 571L1262 567L1309 566L1355 566L1402 569L1450 575L1497 582L1545 592L1592 604L1640 618L1687 635L1734 653L1780 674L1826 696L1872 720L1917 746L1961 773L2005 802L2048 832L2091 862L2133 894L2174 926L2174 926"/><path d="M323 742L331 729L340 715L349 702L358 690L368 677L378 665L388 654L398 643L409 633L420 623L431 614L443 606L455 599L467 593L480 588L493 583L507 580L520 577L534 575L549 574L563 574L578 574L593 576L608 577L623 580L639 583L654 586L670 590L685 594L700 598L700 598"/><path d="M1185 505L1180 498L1174 492L1169 485L1163 479L1158 474L1152 469L1147 464L1142 461L1136 458L1131 456L1126 455L1122 455L1117 456L1112 458L1108 460L1104 464L1100 469L1096 475L1092 482L1088 489L1085 498L1081 507L1078 517L1075 528L1072 540L1070 551L1067 564L1064 576L1062 589L1059 602L1059 602"/><path d="M1780 904L1765 915L1749 926L1734 939L1718 952L1702 968L1686 984L1670 1002L1653 1022L1637 1043L1620 1067L1603 1092L1586 1118L1569 1147L1551 1177L1534 1209L1517 1242L1500 1277L1494 1289"/><path d="M479 718L504 692L531 666L557 641L584 617L612 594L640 571L669 550L699 529L729 510L759 493L791 477L822 462L854 450L887 438L920 429L954 421L987 415L1021 411L1056 409L1090 408L1125 409L1159 411L1194 415L1229 420L1263 426L1297 434L1332 442L1366 452L1399 462L1433 473L1433 473"/><path d="M700 598L736 572L772 546L808 522L846 499L884 478L923 458L963 440L1004 425L1045 411L1087 400L1130 391L1173 384L1216 380L1260 379L1304 380L1349 384L1393 391L1438 400L1483 411L1527 425L1571 442L1615 460L1659 481L1702 504L1745 528L1788 554L1829 582L1871 610L1911 640L1951 671L1951 671"/></g><g class="net-dots" fill="#fff1c4"><circle cx="479" cy="718" r="5"/><circle cx="830" cy="680" r="5"/><circle cx="1059" cy="602" r="5"/><circle cx="1081" cy="794" r="5"/><circle cx="1185" cy="505" r="5"/><circle cx="1433" cy="473" r="5"/><circle cx="1780" cy="904" r="5"/><circle cx="1951" cy="671" r="5"/><circle cx="2174" cy="926" r="5"/></g></svg></div></div></div>
+            <figcaption><span>People</span><span>Together</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="hero-meta">
+          <a href="#events" class="meta-card members-card">
+            <span class="meta-date"><b>16</b><small>Oct</small></span>
+            <span class="meta-text">Next conference<br><strong>TEMSCON-ASPAC 2026, Rajkot</strong></span>
+            <svg class="meta-arrow"><use href="#i-arrow"/></svg>
+          </a>
+          <button class="meta-card story-card" id="storyBtn" type="button">
+            <span class="play"><svg><use href="#i-play"/></svg></span>
+            <span class="meta-text"><strong>Watch TEMS TV</strong><small>Interviews &amp; podcasts</small></span>
+          </button>
+        </div>
+
+        <div class="script-note" aria-hidden="true">
+          <span>Technology</span><span>People</span><span>Management</span><span>Impact</span>
+          <svg viewBox="0 0 160 30"><path d="M4 26 C 50 18, 100 10, 156 3" /></svg>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ BENTO: EXPLORE TEMS ============ -->
+  <section class="section container" id="explore">
+    <div class="bento">
+      <div class="tile intro-tile b-intro" data-bento>
+        <p class="eyebrow">Explore IEEE TEMS</p>
+        <h2>Different Paths,<br>A Shared Purpose</h2>
+        <p>Networking, education and publication: TEMS serves engineers and technology leaders from first project to the boardroom, across five focus areas from idea-to-market to engineer-to-leader.</p>
+        <a href="#history" class="btn btn--primary btn--sm magnetic">Our Mission <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <a href="#events" class="card b-conf tilt" data-bento>
+        <div class="media" style="--g:#0d2a63"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=900&q=75" alt="Conference stage and audience" loading="lazy" decoding="async" /></div>
+        <span class="card-ic"><svg><use href="#i-lectern"/></svg></span>
+        <div class="card-body"><h3>Conferences</h3><p>TEMSCON Global, regional TEMSCONs, ICTMOD, TEMSMET and more across six 2026 events.</p></div>
+        <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+      <a href="#publications" class="card b-pubs card--journal tilt" data-bento>
+        <div class="media" style="--g:#0a1d48">
+          <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=900&q=70" alt="" loading="lazy" decoding="async" />
+          <div class="journal"><b>IEEE</b><span>Engineering<br>Management<br>Review</span><i></i></div>
+        </div>
+        <span class="card-ic"><svg><use href="#i-journal"/></svg></span>
+        <div class="card-body"><h3>Publications</h3><p>IEEE Transactions on Engineering Management, EMR and Leadership BRIEFS.</p></div>
+        <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+      <a href="#impact" class="card b-edu tilt" data-bento>
+        <div class="media" style="--g:#1f2c5c"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=75" alt="Students learning together" loading="lazy" decoding="async" /></div>
+        <span class="card-ic"><svg><use href="#i-cap2"/></svg></span>
+        <div class="card-body"><h3>Education</h3><p>TEMSBOK, the IEEE Blended Learning Program, interactive courses and webinars.</p></div>
+        <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+      <a href="#explore" class="card b-tech tilt" data-bento>
+        <div class="media" style="--g:#071a40"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=75" alt="Glowing circuit board" loading="lazy" decoding="async" /></div>
+        <span class="card-ic"><svg><use href="#i-chip"/></svg></span>
+        <div class="card-body"><h3>Technical Activities</h3><p>Committees on AI4TM, Smart Cities, Blockchain &amp; DLT and Carbon Neutrality.</p></div>
+        <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+    <div class="tile stats b-stats" data-bento>
+      <div class="stat"><span class="stat-ic"><svg><use href="#i-medal"/></svg></span><div><b data-count="75">0</b><small>Years of Legacy · since 1951</small></div></div>
+      <div class="stat"><span class="stat-ic"><svg><use href="#i-lectern"/></svg></span><div><b data-count="6">0</b><small>Conferences in 2026</small></div></div>
+      <div class="stat"><span class="stat-ic"><svg><use href="#i-journal"/></svg></span><div><b data-count="3">0</b><small>Flagship Publications</small></div></div>
+      <div class="stat"><span class="stat-ic"><svg><use href="#i-target"/></svg></span><div><b data-count="5">0</b><small>Focus Areas</small></div></div>
+    </div>
+      <a href="#join" class="card b-memb tilt" data-bento>
+        <div class="media" style="--g:#1a2a55"><img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=900&q=75" alt="Members collaborating" loading="lazy" decoding="async" /></div>
+        <span class="card-ic"><svg><use href="#i-badge"/></svg></span>
+        <div class="card-body"><h3>Membership</h3><p>Join or renew through IEEE, with Women in Engineering and Young Professionals.</p></div>
+        <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+      <a href="#news" class="card b-comm tilt" data-bento>
+        <div class="media" style="--g:#06143a"><img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?auto=format&fit=crop&w=900&q=75" alt="City lights seen from space" loading="lazy" decoding="async" /></div>
+        <span class="card-ic"><svg><use href="#i-nodes"/></svg></span>
+        <div class="card-body"><h3>Community</h3><p>Distinguished Lecturers, the IoT &amp; AI Challenge and the Industry Forum.</p></div>
+        <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+      </a>
+      <div class="tile b-hist" id="history" data-bento>
+        <div class="history-intro">
+          <p class="eyebrow">Since 1951</p>
+          <h2><span class="big-75" data-count="75">0</span> Years of Engineering Leadership</h2>
+          <p>Founded on 12 June 1951 as an IRE professional group, TEMS has grown with the profession it serves.</p>
+        </div>
+        <ol class="timeline">
+        <li><time>1951</time><span>IRE Professional Group on Engineering Management</span></li>
+        <li><time>1973</time><span>IEEE Engineering Management Society</span></li>
+        <li><time>2007</time><span>IEEE Technology Management Council</span></li>
+        <li><time>2015</time><span>IEEE Technology and Engineering Management Society</span></li>
+      </ol>
+      </div>
+      <div class="tile b-focus" data-bento>
+        <p class="eyebrow">What we focus on</p>
+        <h3>Five Focus Areas</h3>
+        <ul class="focus">
+          <li>Moving products and services from idea to market</li>
+          <li>Identifying and implementing successful projects and systems</li>
+          <li>Integrating technology for capability and productivity</li>
+          <li>Developing from engineer to leader</li>
+          <li>Balancing the norms of society, government and regulators</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section class="section container" id="events">
+    <div class="tile events-tile" data-bento>
+      <div class="section-head">
+        <div><p class="eyebrow">Global Events</p><h2>Upcoming Conferences &amp; Events</h2></div>
+        <a href="#events" class="link-arrow">View All Events <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="carousel" id="carousel">
+        <div class="track" id="track">
+          <a class="event tilt" href="#events">
+            <div class="media" style="--g:#13305e"><img src="assets/event-rajkot.jpg" alt="Marwadi University campus, Rajkot" loading="lazy" decoding="async" /></div>
+            <div class="date"><small>Oct</small><b>16 – 17</b><small>2026</small></div>
+            <div class="event-body"><h3>TEMSCON-ASPAC 2026</h3><p><svg><use href="#i-pin"/></svg>Rajkot, India</p></div>
+            <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="event tilt" href="#events">
+            <div class="media" style="--g:#2a1a48"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=72" alt="Eiffel Tower, Paris" loading="lazy" decoding="async" /></div>
+            <div class="date"><small>Oct</small><b>19 – 21</b><small>2026</small></div>
+            <div class="event-body"><h3>IEEE ICTMOD 2026</h3><p><svg><use href="#i-pin"/></svg>Paris, France</p></div>
+            <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="event tilt" href="#events">
+            <div class="media" style="--g:#3a2418"><img src="https://images.unsplash.com/photo-1551161242-b5af797b7233?auto=format&fit=crop&w=800&q=72" alt="Charminar, Hyderabad" loading="lazy" decoding="async" /></div>
+            <div class="date"><small>Oct</small><b>29 – 31</b><small>2026</small></div>
+            <div class="event-body"><h3>IEEE TEMSMET 2026</h3><p><svg><use href="#i-pin"/></svg>Hyderabad, India</p></div>
+            <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="event tilt" href="#events">
+            <div class="media" style="--g:#0d1d3d"><img src="assets/event-stuttgart.jpg" alt="Schlossplatz, Stuttgart" loading="lazy" decoding="async" /></div>
+            <div class="date"><small>Nov</small><b>04 – 05</b><small>2026</small></div>
+            <div class="event-body"><h3>Stuttgart Conference on Automotive Production</h3><p><svg><use href="#i-pin"/></svg>Stuttgart, Germany</p></div>
+            <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="event tilt" href="#events">
+            <div class="media" style="--g:#1b2a3e"><img src="assets/event-pisa.jpg" alt="Piazza dei Miracoli, Pisa" loading="lazy" decoding="async" /></div>
+            <div class="date"><small>Nov</small><b>10 – 13</b><small>2026</small></div>
+            <div class="event-body"><h3>IEEE ICAI-TEMS 2026</h3><p><svg><use href="#i-pin"/></svg>Pisa, Italy</p></div>
+            <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="nav-arrow" id="prev" aria-label="Previous events"><svg><use href="#i-arrow-l"/></svg></button>
+        <div class="dots" id="dots"></div>
+        <button class="nav-arrow" id="next" aria-label="Next events"><svg><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IMPACT ============ -->
+  <section class="section container" id="impact">
+    <div class="impact-grid">
+      <div class="intro-tile" data-bento>
+        <p class="eyebrow">Our Impact</p>
+        <h2>Empowering<br>the Next Generation</h2>
+        <p>A global case competition, grants for student branch chapters, and conversations with people who run engineering organizations.</p>
+        <a href="#impact" class="btn btn--primary btn--sm magnetic">Student Programs <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="slants">
+        <a href="#impact" class="slant tilt" data-bento>
+          <div class="slant-shape">
+            <div class="media" style="--g:#efe7d6"><img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=75" alt="Packed hall at a student competition" loading="lazy" decoding="async" /></div>
+            <div class="card-body"><span class="card-ic"><svg><use href="#i-trophy2"/></svg></span><h3>Global Student<br>Case Competition</h3><p>2026 edition: an AI vs. EI engineering-management case with a global final.</p></div>
+            <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+        <a href="#impact" class="slant tilt" data-bento>
+          <div class="slant-shape">
+            <div class="media" style="--g:#dfe6f0"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=75" alt="Students working at a computer" loading="lazy" decoding="async" /></div>
+            <div class="card-body"><span class="card-ic"><svg><use href="#i-grant"/></svg></span><h3>Student Chapter<br>Grants</h3><p>The 2026 TEMS SBC Spark Grant funds student branch chapter activities.</p></div>
+            <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+        <a href="#impact" class="slant tilt" data-bento>
+          <div class="slant-shape">
+            <div class="media" style="--g:#e3e8ef"><img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?auto=format&fit=crop&w=900&q=75" alt="Podcast microphone and headphones" loading="lazy" decoding="async" /></div>
+            <div class="card-body"><span class="card-ic"><svg><use href="#i-broadcast"/></svg></span><h3>TEMS TV &amp; Radio</h3><p>Stephen Ibaraki’s Tech Spotlight and the TEMS Radio podcast.</p></div>
+            <span class="card-go"><svg><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENTO ROW: PUBLICATIONS + NEWS ============ -->
+  <section class="section container" id="publications">
+    <div class="bento-row">
+      <div class="tile pubs-tile" data-bento>
+        <div class="pubs-intro">
+          <p class="eyebrow">Featured Publications</p>
+          <h2>Research for Real-World Impact</h2>
+          <p>Journals and the quarterly Leadership BRIEFS. The latest BRIEFS issue: <em>Beyond Moving Fast: Leadership When Technology Gets Serious</em> (Sep 2026).</p>
+        </div>
+        <div class="pubs">
+          <article class="pub tilt">
+            <div class="media" style="--g:#dbe5f2"><img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=700&q=72" alt="" loading="lazy" decoding="async" /></div>
+            <h3><small>IEEE</small>Transactions on Engineering Management</h3>
+            <a href="#publications" class="pill">Read the Journal <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="pub tilt">
+            <div class="media" style="--g:#dbe5f2"><img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=700&q=72" alt="" loading="lazy" decoding="async" /></div>
+            <h3><small>IEEE</small>Engineering Management Review</h3>
+            <a href="#publications" class="pill">Read the Journal <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="pub tilt">
+            <div class="media" style="--g:#dbe5f2"><img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=700&q=72" alt="" loading="lazy" decoding="async" /></div>
+            <h3><small>IEEE TEMS Leadership</small>BRIEFS</h3>
+            <a href="#publications" class="pill">Read Vol. 4 · Issue 3 <svg><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+        <a href="#publications" class="link-arrow pubs-all">View All Publications <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="tile news-tile" id="news" data-bento>
+        <div class="section-head">
+          <div><p class="eyebrow">Latest News &amp; Announcements</p><h2>What’s New at IEEE TEMS</h2></div>
+          <a href="#publications" class="link-arrow">View All News <svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="news">
+          <a href="#publications" class="news-card">
+            <div class="news-meta"><span class="tag">Leadership BRIEFS</span><time datetime="2026-09-12">Sep 12, 2026</time></div>
+            <h3>Vol. 4, Issue 3: Beyond Moving Fast, Leadership When Technology Gets Serious</h3>
+            <span class="round-btn sm"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+          <a href="#publications" class="news-card">
+            <div class="news-meta"><span class="tag">Call for Papers</span><time datetime="2026-07-03">Jul 3, 2026</time></div>
+            <h3>EMR: Automation &amp; Control-Driven Sustainability in Manufacturing and Production</h3>
+            <span class="round-btn sm"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+          <a href="#impact" class="news-card">
+            <div class="news-meta"><span class="tag tag--warm">Competition</span><time datetime="2026-02-20">Feb 20, 2026</time></div>
+            <h3>Global Student Case Competition 2026 (2nd Edition) Announced</h3>
+            <span class="round-btn sm"><svg><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+        <div class="newsletter">
+          <p><strong>TEMS Newsletter.</strong> Conference deadlines, new issues and calls for papers by email.</p>
+          <a href="#" data-placeholder class="btn btn--primary btn--sm magnetic">Subscribe <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-wrap" id="join">
+    <div class="cta" data-bento>
+      <div class="cta-copy">
+        <h2>Join <em>IEEE TEMS</em></h2>
+        <p>Add the society to your IEEE membership for its journals, conferences and a chapter network that spans IEEE regions worldwide.</p>
+        <div class="hero-cta">
+          <a href="#join" class="btn btn--primary magnetic">Join Now <svg><use href="#i-arrow"/></svg></a>
+          <a href="#history" class="btn btn--outline-light magnetic">Learn About TEMS</a>
+        </div>
+      </div>
+      <div class="cta-panel">
+        <div class="media cta-media" style="--g:#1b2a55"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1400&q=75" alt="" loading="lazy" decoding="async" /><svg class="crowd" viewBox="110 0 380 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#050d22"><circle cx="-10" cy="129" r="13.8"/><path d="M-33 200C-33 156 -24 151 -10 151S13 156 13 200Z"/><circle cx="35" cy="131" r="13.5"/><path d="M12 200C12 157 21 152 35 152S58 157 58 200Z"/><circle cx="72" cy="117" r="16.1"/><path d="M44 200C44 149 55 143 72 143S99 149 99 200Z"/><circle cx="102" cy="121" r="15.3"/><path d="M76 200C76 151 87 146 102 146S128 151 128 200Z"/><circle cx="137" cy="145" r="10.7"/><path d="M119 200C119 166 126 162 137 162S155 166 155 200Z"/><circle cx="169" cy="140" r="11.8"/><path d="M149 200C149 163 157 158 169 158S189 163 189 200Z"/><circle cx="212" cy="144" r="10.9"/><path d="M193 200C193 165 201 161 212 161S230 165 230 200Z"/><circle cx="251" cy="129" r="13.9"/><path d="M228 200C228 156 237 151 251 151S275 156 275 200Z"/><circle cx="287" cy="132" r="13.3"/><path d="M265 200C265 158 274 153 287 153S310 158 310 200Z"/><circle cx="318" cy="148" r="10.1"/><path d="M301 200C301 168 308 164 318 164S335 168 335 200Z"/><circle cx="351" cy="127" r="14.2"/><path d="M327 200C327 155 337 150 351 150S375 155 375 200Z"/><circle cx="388" cy="139" r="11.8"/><path d="M368 200C368 162 376 158 388 158S408 162 408 200Z"/><circle cx="428" cy="135" r="12.7"/><path d="M406 200C406 160 415 155 428 155S449 160 449 200Z"/><circle cx="462" cy="123" r="14.9"/><path d="M437 200C437 153 447 147 462 147S488 153 488 200Z"/><circle cx="504" cy="142" r="11.3"/><path d="M484 200C484 164 492 160 504 160S523 164 523 200Z"/><circle cx="543" cy="132" r="13.2"/><path d="M521 200C521 158 529 153 543 153S565 158 565 200Z"/><circle cx="587" cy="126" r="14.5"/><path d="M562 200C562 154 572 149 587 149S611 154 611 200Z"/></g></svg></div>
+      </div>
+      <p class="cta-note">A global network<br>for a more innovative,<br>inclusive and sustainable<br>world.<svg viewBox="0 0 160 20"><path d="M4 16 C 50 8, 100 6, 156 3" /></svg></p>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo logo--footer" aria-label="IEEE TEMS">
+        <svg class="logo-rings" viewBox="0 0 108 160"><use href="#tems-rings" /></svg>
+        <span class="logo-text">
+          <span class="logo-title"><span class="ieee">IEEE</span><span class="tems">TEMS</span></span>
+          <span class="logo-sub"><span>Technology &amp; Engineering</span><span>Management Society</span></span>
+        </span>
+      </a>
+      <p>Supporting excellence in the leadership and stewardship of transformational technologies and organizations.</p>
+      <div class="socials">
+        <a href="#news" aria-label="IEEE TEMS on LinkedIn"><svg><use href="#i-in"/></svg></a>
+        <a href="#impact" aria-label="IEEE TEMS Radio podcast"><svg><use href="#i-mic"/></svg></a>
+        <a href="#impact" aria-label="IEEE TEMS TV"><svg><use href="#i-play"/></svg></a>
+      </div>
+    </div>
+    <div><h3>Society</h3><a href="#history">Mission</a><a href="#history">Board of Governors</a><a href="#history">Committees</a><a href="#history">Distinguished Lecturers</a><a href="#history">Bylaws &amp; Operations Manual</a><a href="#history">Contact Us</a></div>
+    <div><h3>Programs</h3><a href="#events">Conferences</a><a href="#publications">Publications</a><a href="#impact">TEMSBOK</a><a href="#explore">IoT &amp; AI Challenge</a><a href="#join">Women in TEMS</a><a href="#publications">Calls for Papers</a></div>
+    <div><h3>IEEE</h3><a href="#" data-placeholder>Sitemap / More Sites</a><a href="#" data-placeholder>Accessibility</a><a href="#" data-placeholder>Nondiscrimination Policy</a><a href="#" data-placeholder>Privacy &amp; Opting Out of Cookies</a><a href="#" data-placeholder>Terms and Conditions</a></div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> IEEE. All rights reserved. Use of this website signifies your agreement to the IEEE Terms and Conditions. A not-for-profit organization, IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.<br>Unofficial trial build: not affiliated with, or endorsed by, IEEE or IEEE TEMS. <a class="credits" href="assets/CREDITS.txt" target="_blank" rel="noopener">Image credits</a></p>
+    <a href="#" data-placeholder aria-label="IEEE"><img class="ieee-mark" src="assets/ieee-mb-white.png" alt="IEEE" width="287" height="84" loading="lazy" /></a>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="IEEE TEMS TV and Radio">
+  <div class="modal-card">
+    <button class="icon-btn modal-close" id="modalClose" aria-label="Close"><svg><use href="#i-close"/></svg></button>
+    <div class="modal-video">
+      <svg viewBox="0 0 108 160" class="modal-rings"><use href="#tems-rings"/></svg>
+      <h3>IEEE TEMS TV &amp; Radio</h3>
+      <p>Serial entrepreneur, investor and futurist Stephen Ibaraki talks with leaders across the technology community, and engineering leader Manju Iyer Basaralu Srinivasa hosts the TEMS Radio podcast.</p>
+      <div class="hero-cta">
+        <a href="#impact" class="btn btn--primary">Watch TEMS TV <svg><use href="#i-arrow"/></svg></a>
+        <a href="#impact" class="btn btn--outline-light">Listen to TEMS Radio</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="script.js?v=14"></script>
+</body>
+</html>
